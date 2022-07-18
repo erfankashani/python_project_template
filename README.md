@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 - run test cases
 ```bash
-pyetst
+pytest
 ```
 
 - Run the notebook
