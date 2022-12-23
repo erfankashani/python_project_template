@@ -1,6 +1,6 @@
+from utils.log import LogMixin
 
-
-class Calculator():
+class Calculator(LogMixin):
     """
         This object uses common arithmetic operations to perform calculations.
 
@@ -8,11 +8,9 @@ class Calculator():
         instantiate and call operators
     """
 
-    def __init__(self):
-        pass
-
     def add(self, **args:int) -> int:
         base = 0
+        self.logger.info(f"the value for base is set to {base}")
         for key, value in args.items():
             base = base + value
         return base

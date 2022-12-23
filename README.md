@@ -8,6 +8,10 @@ This template python project was built to carry series of best practices when cr
 - notebooks for ipython or scripts
 - docs for design documentations related to the repo
 - Design.rst for architecture design decisions
+- Basic python architecture design for data driven application:
+    - Context Manager: tracks the importnat clients and varibles inside of a context for more efficient usage (ex. carry spark client).
+    - Config management: This module is the config source for the application. This can read environmental and global variables as well as handling secrets.
+    - Utils: this module defines/configures basic tools used by majority of applications such as logging 
 
 ## Get started:
 
